@@ -1,5 +1,5 @@
 xml.instruct!
 xml.Response do
-  xml.Say "Greetings."
+  xml.Say "Greetings. Please enter your clinic number."
   xml.Hangup
 end
