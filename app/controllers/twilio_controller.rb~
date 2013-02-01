@@ -15,7 +15,8 @@ class TwilioController < ApplicationController
       @post_to BASE_URL + "/check"
       render :action => no_clinic.xml.builder
     else
-      @post_to BASE_URL + "/choose/#{@clinic.id}
+      @post_to BASE_URL + "/choice/#{@clinic.id}"
+      render :action => get_choice.xml.builder
     end
   end
 end

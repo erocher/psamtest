@@ -4,7 +4,7 @@ class TwilioController < ApplicationController
 #recieve call
   def incoming
     @post_to BASE_URL + "/check" 
-    render :action => "greet.xml.builder", :layout => false
+    render :action => "greet.xml.builder"
   end
 
 
